@@ -18,7 +18,6 @@ While our work spans multiple domains in educational verification and quality as
 
 We identified a specific and costly inefficiency in the Gradescope ecosystem for faculty managing **take-home assignments** (Homework, Lab Reports, etc.). The current Gradescope assignment types force a trade-off that costs instructors thousands of hours in lost efficiency every time a course is offered. We created GradeBridge to solve this problem entirely.
 
----
 ## 🛑 The Core Problem: The Gradescope Trade-Off for Written Assignments
 
 Faculty utilize Gradescope's **AI-Assisted Grading and Answer Grouping** for the crucial **40-60% grading time savings** they offer. This powerful efficiency is fundamentally tied to **Fixed Length/Templated** assignments, which work well for in-person exams but introduce major friction for take-home work.
@@ -31,6 +30,22 @@ When assessing **Homework, Lab Reports, and Problem Sets**, instructors are curr
 | **Variable Length** (Non-Templated PDF) | **AI-Assisted Grouping is NOT available.** | **Zero AI Time Savings.** Explicitly confirmed: "*...do not support AI-assisted grouping.*" |
 | **Fixed Length/Templated** (Template Required) | **AI-Assisted Grading IS available, BUT...** | **Compliance Burden.** The time spent manually fixing non-compliant student submissions often *negates* the entire 40-60% time saving. |
 
+### The Cost of Incompatibility: Burden on Students and Graders
+
+The technical trade-off above translates directly into significant **human friction** and time wasted across the assessment process:
+
+#### 😩 Student Frustrations
+Students face substantial technical hurdles that divert time away from learning:
+* **Mixed-Media Formatting:** Struggling to digitize and merge handwritten notes (photos), typed text, and complex diagrams into a single, correctly formatted PDF.
+* **Procedural Errors:** Clerical errors from manually mapping questions to pages in **Variable Length** assignments, which can lead to grade deductions or workflow errors.
+* **Technical Barriers:** Dealing with incompatible formats (like .heic), PDF assembly issues, and file size limits.
+
+#### 😫 Instructor & Grader Burden
+Faculty and TAs lose critical time and efficiency due to submission problems:
+* **Upfront Time Investment:** Faculty waste approximately **8 hours per assignment** in laborious template creation, scanning, and region marking.
+* **Workflow Inefficiencies:** Graders must waste time hunting for misplaced answers in submissions with clerical errors, disrupting the efficient horizontal grading flow.
+* **Technical Support:** TAs spend unnecessary time acting as first-line technical support for student PDF, image, and upload issues (estimated to be reduced by **70%** by GradeBridge).
+
 ---
 
 ## ✅ **GradeBridge:** Eliminating the Trade-Off
@@ -39,7 +54,7 @@ When assessing **Homework, Lab Reports, and Problem Sets**, instructors are curr
 
 ### **The GradeBridge Promise:**
 
-We provide the convenience of **Variable Length** submissions with the full, guaranteed AI efficiency of **Fixed Length/Templated** assignments.
+We eliminate the need for restrictive templates, providing students with the convenience of flexible submission while guaranteeing the full AI-Assisted Grading efficiency of Fixed Length/Templated assignments.
 
 ### ➡️ How the GradeBridge System Works
 
