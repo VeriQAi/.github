@@ -10,14 +10,85 @@
 
 We believe that cutting-edge AI should be accessible and affordable to every educator, regardless of institution size, budget, or technical expertise.
 
-Our mission is simple: **Transform hours of teaching busywork into minutes**, so you can spend more time doing what matters most—connecting with your students and teaching.
+### 🎯 VeriQAi Mission: Transforming Busywork into Learning Time
 
-## 🎯 Focus: The Gradescope Integration
+Our mission is simple: **Transform hours of teaching busywork into minutes, so you can spend more time connecting with your students and teaching.**
 
-While our work spans multiple domains in educational verification and quality assurance, one of our most impactful tools is **GradeBridge**, which tackles a critical workflow gap in large-scale course management.
+VeriQAi is dedicated to improving the integrity and quality of the digital learning experience. Our tools are built on the mission that **students should spend their time learning, not wrestling with administrative technology.**
 
-We identified a specific and costly inefficiency in the Gradescope ecosystem for faculty managing **take-home assignments** (Homework, Lab Reports, etc.). The current Gradescope assignment types force a trade-off that costs instructors thousands of hours in lost efficiency every time a course is offered. We created GradeBridge to solve this problem entirely.
+### 🔍 Addressing the Gradescope Efficiency Gap
 
+To fulfill this mission, we've focused on one of the most costly inefficiencies in large-scale course management: **the trade-off required for assessing written take-home assignments** (Homework, Lab Reports, etc.) within the Gradescope ecosystem.
+
+We identified a workflow gap where the platform's assignment types force instructors to choose between **student submission convenience** and **grading efficiency**. This technical trade-off costs educators thousands of hours in lost time every semester.
+
+
+Our most impactful solution, **GradeBridge**, tackles a persistent inefficiency in the Gradescope ecosystem that creates friction for both students and instructors managing large, written assignments.
+
+---
+## 🛑 The Core Problem: The Gradescope Trade-Off (Efficiency vs. Student Experience)
+
+Faculty rely on Gradescope's **AI-Assisted Grading and Answer Grouping** for the crucial **40-60% grading time savings** they offer. This powerful efficiency is fundamentally tied to **Fixed Length/Templated** assignments.
+
+When assessing **Homework, Lab Reports, and Problem Sets**, the current Gradescope assignment types force a trade-off that creates substantial human cost:
+
+| Assignment Type | AI-Assisted Grading Status | The Instructor's Loss |
+| :--- | :--- | :--- |
+| **Online Assignment** (Web-Form) | **NOT available.** | **Zero AI Time Savings.** Explicitly confirmed: "*AI-assisted grading and answer-grouping are not possible...*" |
+| **Variable Length** (Non-Templated PDF) | **NOT available.** | **Zero AI Time Savings.** Explicitly confirmed: "*...do not support AI-assisted grouping.*" |
+| **Fixed Length/Templated** (Template Required) | **IS available, BUT...** | **Compliance Burden.** Grader time fixing errors often *negates* the entire 40-60% AI time saving. |
+
+### The Human Cost: Friction for Students and Graders
+
+The technical trade-off above translates directly into wasted effort and frustration:
+
+#### 😩 Student Experience: Learning Time Lost
+Students spend valuable time on technical hurdles instead of content mastery:
+* **Mixed-Media Formatting:** Struggling to digitize and merge handwritten notes, typed text, and complex diagrams into a single, compliant PDF.
+* **Procedural Errors:** Clerical mistakes from manually mapping answers in **Variable Length** submissions, leading to workflow disruption and potential grade penalties.
+* **Technical Barriers:** Dealing with incompatible image formats, PDF assembly issues, and frustrating upload failures.
+
+#### 😫 Instructor & Grader Burden: Time Spent on Admin, Not Feedback
+Faculty and TAs lose critical time and efficiency dealing with compliance issues:
+* **Significant Upfront Setup:** Faculty waste approximately **8 hours per assignment** in laborious template creation, scanning, and region marking.
+* **Workflow Inefficiencies:** Graders are forced to waste time searching for misplaced answers, breaking the intended efficient grading flow.
+* **Technical Support:** TAs act as technical support for submission issues, diverting them from providing academic feedback.
+
+---
+
+## ✅ **GradeBridge:** Eliminating the Trade-Off
+
+**GradeBridge** is the essential layer that allows instructors to maximize the **full 40-60% grading efficiency** while delivering a **zero-friction submission experience** for students.
+
+### **The GradeBridge Promise:**
+
+We eliminate the need for restrictive templates, providing students with the **convenience of flexible submission** while guaranteeing the full **AI-Assisted Grading efficiency** of **Fixed Length/Templated** assignments.
+
+### ➡️ How the GradeBridge System Works
+
+This seamless experience is delivered through two component tools:
+
+### **1. GradeBridge Assignment Maker**
+
+* **Function:** Instructor-facing tool for quick setup.
+* **Value:** Eliminates the 8-hour manual template setup. It automatically generates the assignment structure and link, ensuring the final Gradescope setup is AI-ready.
+
+### **2. GradeBridge Student Submission**
+
+* **Function:** Student-facing portal for free-form upload.
+* **Value:** Removes all technical burdens from the student. The system accepts raw input (text, images, PDFs) and **programmatically generates** the perfectly formatted, **Fixed Length/Templated** PDF that Gradescope requires, guaranteeing every submission is compliant and AI-ready.
+
+---
+
+### 📚 Gradescope Documentation References
+
+* **Assignment Types: Fixed Length vs. Variable Length**
+    * *Reference:* https://guides.gradescope.com/hc/en-us/articles/22244660005901-Assignment-Types
+* **AI-Assisted Grading and the Fixed-Template Requirement**
+    * *Reference:* https://guides.gradescope.com/hc/en-us/articles/24838908062093-AI-Assisted-Grading-and-Answer-Groups
+* **Creating a Programming Assignment (For Code)**
+    * *Reference:* https://guides.gradescope.com/hc/en-us/articles/22254107840909-Creating-a-Programming-Assignment
+      
 ## 🛑 The Core Problem: The Gradescope Trade-Off for Written Assignments
 
 Faculty utilize Gradescope's **AI-Assisted Grading and Answer Grouping** for the crucial **40-60% grading time savings** they offer. This powerful efficiency is fundamentally tied to **Fixed Length/Templated** assignments, which work well for in-person exams but introduce major friction for take-home work.
