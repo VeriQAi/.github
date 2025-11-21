@@ -13,6 +13,52 @@ We believe that cutting-edge AI should be accessible and affordable to every edu
 Our mission is simple: **Transform hours of teaching busywork into minutes**, so you can spend more time doing what matters most—connecting with your students and teaching.
 
 ---
+## 🛑 The Core Problem: The Gradescope Trade-Off for Written Assignments
+
+Faculty utilize Gradescope's **AI-Assisted Grading and Answer Grouping** for the crucial **40-60% grading time savings** they offer. This powerful efficiency is fundamentally tied to **Fixed Length/Templated** assignments, which work well for in-person exams but introduce major friction for take-home work.
+
+When assessing **Homework, Lab Reports, and Problem Sets**, instructors are currently forced to choose between **student convenience** and **grading efficiency** due to Gradescope's assignment type limitations.
+
+| Assignment Type | Gradescope Feature Status | The Instructor's Loss |
+| :--- | :--- | :--- |
+| **Online Assignment** (Web-Form) | **AI-Assisted Grading is NOT available.** | **Zero AI Time Savings.** Explicitly confirmed: "*AI-assisted grading and answer-grouping are not possible on any answer field...*" |
+| **Variable Length** (Non-Templated PDF) | **AI-Assisted Grouping is NOT available.** | **Zero AI Time Savings.** Explicitly confirmed: "*...do not support AI-assisted grouping.*" |
+| **Fixed Length/Templated** (Template Required) | **AI-Assisted Grading IS available, BUT...** | **Compliance Burden.** The time spent manually fixing non-compliant student submissions often *negates* the entire 40-60% time saving. |
+
+---
+
+## ✅ **GradeBridge:** Eliminating the Trade-Off
+
+**GradeBridge** is the missing layer that allows you to capture the **full 40-60% grading efficiency** for all written take-home assignments while providing students with an easy, non-templated submission process.
+
+### **The GradeBridge Promise:**
+
+We provide the convenience of **Variable Length** submissions with the full, guaranteed AI efficiency of **Fixed Length/Templated** assignments.
+
+### ➡️ How the GradeBridge System Works
+
+This seamless experience is delivered through two component tools:
+
+### **1. GradeBridge Assignment Maker**
+
+* **Function:** Instructor-facing tool for quick setup.
+* **Value:** Guides you through creating the assignment structure and generates the unique submission link. It handles all the template configuration in the background, minimizing setup time and ensuring the final Gradescope setup is AI-ready.
+
+### **2. GradeBridge Student Submission**
+
+* **Function:** Student-facing portal for free-form upload.
+* **Value:** Students upload their work easily—no complex template formatting required. GradeBridge **automatically processes** the submission and generates the perfectly formatted **Fixed Length/Templated** PDF that Gradescope needs, ensuring every single submission is compliant and AI-ready.
+
+---
+
+### 📚 Gradescope Documentation References
+
+* **Assignment Types: Fixed Length vs. Variable Length**
+    * *Reference:* https://guides.gradescope.com/hc/en-us/articles/22244660005901-Assignment-Types
+* **AI-Assisted Grading and the Fixed-Template Requirement**
+    * *Reference:* https://guides.gradescope.com/hc/en-us/articles/24838908062093-AI-Assisted-Grading-and-Answer-Groups
+* **Creating a Programming Assignment (For Code)**
+    * *Reference:* https://guides.gradescope.com/hc/en-us/articles/22254107840909-Creating-a-Programming-Assignment
 
 ## 🚀 Our Products
 
