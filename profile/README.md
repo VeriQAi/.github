@@ -12,6 +12,12 @@ We believe that cutting-edge AI should be accessible and affordable to every edu
 
 Our mission is simple: **Transform hours of teaching busywork into minutes**, so you can spend more time doing what matters most—connecting with your students and teaching.
 
+## 🎯 Focus: The Gradescope Integration
+
+While our work spans multiple domains in educational verification and quality assurance, one of our most impactful tools is **GradeBridge**, which tackles a critical workflow gap in large-scale course management.
+
+We identified a specific and costly inefficiency in the Gradescope ecosystem for faculty managing **take-home assignments** (Homework, Lab Reports, etc.). The current Gradescope assignment types force a trade-off that costs instructors thousands of hours in lost efficiency every time a course is offered. We created GradeBridge to solve this problem entirely.
+
 ---
 ## 🛑 The Core Problem: The Gradescope Trade-Off for Written Assignments
 
