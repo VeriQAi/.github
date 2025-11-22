@@ -32,7 +32,7 @@
 
 **The Result:** Transform 3+ hour workflows into 15-minute processes while improving consistency and academic integrity.
 
-📖 **[Read the complete workflow explanation →](WORKFLOW_MOTIVATION.md)**
+📖 **[See how this solves the 3-hour assignment workflow problem →](WORKFLOW_MOTIVATION.md)**
 
 ---
 
