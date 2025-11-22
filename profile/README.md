@@ -76,6 +76,7 @@ VeriQAI provides free, open-source tools for educators. **GradeBridge** eliminat
 - Choose templates → 8 hours setup + student formatting struggles
 - Skip templates → Easy submissions but zero AI grading benefits
 - Either way, educators lose time and efficiency
+*([See detailed technical analysis with Gradescope documentation references →](WORKFLOW_MOTIVATION.md))*
 
 **With GradeBridge:**
 - Students get flexible, guided submission experience
