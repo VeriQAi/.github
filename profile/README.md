@@ -1,6 +1,6 @@
 # VeriQAI - Solve the Gradescope Efficiency Gap
 
-VeriQAI provides free, open-source tools for educators. **GradeBridge** eliminates the costly trade-off between student convenience and grading efficiency in Gradescope.
+VeriQAI provides free, open-source tools for educators. **GradeBridge eliminates the costly trade-off between student convenience and grading efficiency in Gradescope.** *([Technical analysis with platform documentation →](WORKFLOW_MOTIVATION.md))*
 
 **🚀 Ready to use right now - no signup required:**
 
