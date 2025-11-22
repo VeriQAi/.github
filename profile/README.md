@@ -114,7 +114,7 @@ VeriQAI provides free, open-source tools for educators. **GradeBridge** eliminat
 ## 📖 Learn More
 
 **Want the full technical analysis?**
-📖 **[Understanding the Gradescope efficiency problem & our solution →](WORKFLOW_MOTIVATION.md)**
+📖 **[Technical analysis: Why Gradescope forces this trade-off & how we solve it →](WORKFLOW_MOTIVATION.md)**
 
 **Ready to get involved?**
 - 🚀 **Try it now:** [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) | [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/)
