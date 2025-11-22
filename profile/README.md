@@ -128,11 +128,3 @@ We're educators and technologists who understand the daily grind: creating assig
 ---
 
 **Built by educators, for educators. Free forever.**
-
----
-
-## About VeriQAI
-
-VeriQAI empowers educators worldwide through intelligent, accessible AI solutions. We're teachers and technologists who understand the daily challenges of education—and we're committed to making cutting-edge educational AI affordable and accessible to every educator.
-
-*More tools in development • Join our community to stay updated*
