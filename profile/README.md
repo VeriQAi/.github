@@ -3,19 +3,18 @@
 **🚀 Ready to use right now - no signup required:**
 
 ## [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) 
-**For Educators** • Create structured assignments with LaTeX support and Gradescope integration
+**For Educators** • Create structured assignments that auto-generate guided submission forms for students
 - LaTeX rendering for STEM courses
-- PDF generation and JSON export  
-- Drag-and-drop interface
+- **Exports JSON that students load in Student Submission app**
+- PDF generation for Gradescope templates
 - Browser-based - no installation needed
 
 ## [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/)
-**For Students** • Complete assignments and generate professional PDFs for submission
-- Text, image, and LaTeX support
+**For Students** • **Load assignments from Assignment Maker** and generate professional PDFs
+- **Imports JSON files created by instructors using Assignment Maker**
+- Text, image, and LaTeX support with guided structure
 - AI usage tracking and reflection
-- Auto-save and offline capable
-- Gradescope-ready PDF output
-
+- **Gradescope-ready PDF output that matches instructor templates**
 ---
 
 ## Why These Two Apps?
