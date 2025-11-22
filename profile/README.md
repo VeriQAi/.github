@@ -1,6 +1,6 @@
 # VeriQAI - Solve the Gradescope Efficiency Gap
 
-VeriQAI provides free, open-source tools for educators. **GradeBridge eliminates the costly trade-off between student convenience and grading efficiency in Gradescope.** *([Technical analysis with platform documentation →](WORKFLOW_MOTIVATION.md))*
+VeriQAI provides free, open-source tools for educators. **GradeBridge eliminates the costly trade-off between student convenience and grading efficiency in Gradescope.** ([constraints that create this problem](WORKFLOW_MOTIVATION.md))
 
 **🚀 Ready to use right now - no signup required:**
 
@@ -76,7 +76,7 @@ VeriQAI provides free, open-source tools for educators. **GradeBridge eliminates
 - Choose templates → 8 hours setup + student formatting struggles
 - Skip templates → Easy submissions but zero AI grading benefits
 - Either way, educators lose time and efficiency
-*([See detailed technical analysis with Gradescope documentation references →](WORKFLOW_MOTIVATION.md))*
+*([See detailed technical analysis with Gradescope documentation references](WORKFLOW_MOTIVATION.md))*
 
 **With GradeBridge:**
 - Students get flexible, guided submission experience
@@ -115,7 +115,7 @@ VeriQAI provides free, open-source tools for educators. **GradeBridge eliminates
 ## 📖 Learn More
 
 **Want the full technical analysis?**
-📖 **[Technical analysis: Why Gradescope forces this trade-off & how we solve it →](WORKFLOW_MOTIVATION.md)**
+📖 **[Why Gradescope forces this trade-off & how we solve it](WORKFLOW_MOTIVATION.md)**
 
 **Ready to get involved?**
 - 🚀 **Try it now:** [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) | [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/)
