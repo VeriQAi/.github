@@ -4,7 +4,7 @@ VeriQAi provides free, open-source tools for educators. GradeBridge is our assig
 
 **🚀 Ready to use right now - no signup required:**
 
-![GradeBridge Suite](path-to-your-image.png)
+![GradeBridge Suite](pgradebridge-workflow.png)
 
 ## Why These Two Apps?
 
