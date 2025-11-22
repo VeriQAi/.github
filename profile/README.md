@@ -1,5 +1,7 @@
 # VeriQAI - Transform Assignment Workflows
 
+ VeriQAi provides free, open-source tools for educators. GradeBridge is our assignment workflow suite.
+
 **🚀 Ready to use right now - no signup required:**
 
 ## Why These Two Apps?
