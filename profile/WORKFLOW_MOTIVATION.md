@@ -134,26 +134,24 @@ Gradescope AI → [Full Efficiency] → 40-60% Time Savings
 
 ---
 
-## 📊 Validation: Real-World Implementation Data
+## 📊 Expected Impact Based on Platform Analysis
 
-### **Pilot Program Results**
+### **Projected Benefits for Typical Large Course**
 
-**Institution:** Major Research University (R1)
-**Course:** Engineering Mechanics (350 students)
-**Duration:** Full semester (12 assignments)
+**Scenario:** STEM course with 300+ students using Gradescope for written assignments
 
-**Measured Outcomes:**
-- **Template Creation Time:** 8 hours → 15 minutes (3,100% improvement)
-- **Student Submission Success Rate:** 64% → 98% (53% improvement)  
-- **Grading Time per Assignment:** Maintained full 40-60% AI efficiency
-- **TA Technical Support Hours:** 45 hours → 2 hours (95% reduction)
+**Current Constraints (documented):**
+- Faculty spend 8+ hours per assignment on template creation
+- Students experience 15-25% submission format failures
+- Choosing templates vs. accessibility creates institutional time loss
 
-**Faculty Feedback:**
-> "*For the first time, I get both the AI grading efficiency AND happy students. The setup time went from my entire weekend to a coffee break.*"
+**Expected Improvements with GradeBridge:**
+- **Template creation:** Eliminated through automated generation
+- **Submission success:** Near 100% through guided interface  
+- **Grading efficiency:** Full preservation of Gradescope AI benefits
+- **Faculty time:** Focus on content vs. format troubleshooting
 
-**Student Feedback:**
-> "*Finally, an assignment system that doesn't fight me. I can focus on the actual engineering instead of wrestling with PDFs.*"
-
+*Projections based on documented platform limitations and typical workflow analysis.*
 ---
 
 ## 🏗️ The Platform Integration Strategy
