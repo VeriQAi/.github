@@ -90,9 +90,27 @@ VeriQAI provides free, open-source tools for educators. **GradeBridge eliminates
 
 **STEM Educators:** Complex LaTeX equations rendered professionally, no template creation burden
 
-**Large Course Instructors:** Hundreds of consistent submissions, maximum Gradescope AI efficiency  
+**Large Course Instructors:** Hundreds of consistent submissions, maximum Gradescope AI efficiency
 
 **Any Educator Using Gradescope:** Who wants the full 40-60% grading time savings without the template setup nightmare
+
+---
+
+## 🛠️ Also from VeriQAI
+
+### [MATLAB Grader Problem Generator](https://veriqai.github.io/MatlabGraderProblemGenerator/)
+**For MATLAB Educators** • Generate complete, assessment-ready MATLAB Grader problems in minutes — not hours
+
+Creating a single MATLAB Grader problem from scratch means writing the problem description, a reference solution, a learner template, *and* test cases — each with MATLAB Grader's exacting syntax requirements. That's easily 1–2 hours per problem.
+
+The generator eliminates that work:
+- Enter a learning objective → Claude proposes 5 calibrated problem options (Easy / Medium / Hard, Script or Function)
+- Select the ones you want → all 4 artifacts generated automatically, one by one, with live review
+- Download as a named ZIP → paste directly into MATLAB Grader
+
+**The result:** 1–2 hours of problem authoring per question reduced to minutes, with test cases that follow MATLAB Grader R2025b syntax rules out of the box.
+
+> Bring your own Anthropic API key • No signup • MIT License • Runs entirely in your browser
 
 ---
 
@@ -118,7 +136,7 @@ VeriQAI provides free, open-source tools for educators. **GradeBridge eliminates
 📖 **[Why Gradescope forces this trade-off & how we solve it](WORKFLOW_MOTIVATION.md)**
 
 **Ready to get involved?**
-- 🚀 **Try it now:** [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) | [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/)
+- 🚀 **Try it now:** [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) | [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/) | [MATLAB Grader Problem Generator](https://veriqai.github.io/MatlabGraderProblemGenerator/)
 - 🐛 [Report issues or request features](https://github.com/orgs/VeriQAi/repositories)
 - 💻 Contribute to our open-source mission
 - ⭐ Star our repos if they save you time
