@@ -7,7 +7,7 @@ VeriQAI provides free, open-source tools for educators. Our mission: eliminate t
 | Tool | What it solves | Live App |
 |---|---|---|
 | **GradeBridge** | Eliminates the trade-off between student convenience and Gradescope AI-grading efficiency | [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) · [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/) |
-| **MATLAB Grader Problem Generator** | Turns 1–2 hours of MATLAB Grader problem authoring into minutes | [Open App](https://veriqai.github.io/MatlabGraderProblemGenerator/) |
+| **MATLAB Grader Problem Generator** | Turns 1–2 hours of MATLAB Grader problem authoring into minutes | [MATLAB Grader Problem Generator](https://veriqai.github.io/MatlabGraderProblemGenerator/) |
 
 ---
 
