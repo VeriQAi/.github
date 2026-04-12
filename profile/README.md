@@ -18,15 +18,16 @@ GradeBridge does **not** use Gradescope's built-in AI features. It does **not** 
 ### How the pipeline works
 
 ```mermaid
-flowchart LR
-    A["Instructor's existing materials\nWord · PDF · Markdown"] -->|"Claude Code reads source\n(two-phase: objectives → rubrics)"| B["Structured assignment .md"]
-    B -->|"Import into Assignment Maker"| C["Assignment Maker\nbrowser app"]
-    C --> D["Student assignment file\n(distributed via Canvas)"]
-    C --> E["Confidential grader doc\n(HTML, for TAs)"]
-    D -->|"Student loads in browser"| F["Student Submission App\nno install · no account"]
-    F -->|"Fill answers · Download"| G["Encrypted ZIP\nAES-256-GCM"]
-    G -->|"Submit to Gradescope"| H["GradeBridge Docker autograder\nPython · calls Claude API"]
-    H --> I["AI-graded questions scored\nTA-review questions flagged"]
+flowchart TD
+    A["📄 Instructor's existing materials\nWord · PDF · Markdown"]
+    A -->|"Claude Code reads source\ntwo-phase: confirm objectives → generate rubrics"| B["📝 Structured assignment .md file"]
+    B -->|"Instructor imports & reviews"| C["🖥️ Assignment Maker\nbrowser app — no install, no account"]
+    C --> D["📬 Student assignment file\ndistributed via Canvas"]
+    C --> E["🔒 Confidential grader document\nHTML, for TAs"]
+    D -->|"Student loads in browser"| F["🖥️ Student Submission App\nno install · no account"]
+    F -->|"Student fills answers, clicks Download"| G["📦 Encrypted ZIP archive\nAES-256-GCM"]
+    G -->|"Student submits to Gradescope"| H["⚙️ GradeBridge Docker autograder\nPython · calls Anthropic Claude API"]
+    H --> I["✅ AI-graded questions scored automatically\n🔍 TA-review questions flagged for human review"]
 ```
 
 ### Step by step
