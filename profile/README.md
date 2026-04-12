@@ -1,146 +1,87 @@
-# VeriQAI — Free, Open-Source AI Tools for Educators
+# VeriQAi — Free, Open-Source AI Tools for Educators
 
-VeriQAI provides free, open-source tools for educators. Our mission: eliminate the friction points that prevent educators from realising the full potential of AI-assisted teaching and assessment tools. Every tool runs entirely in your browser — no accounts, no subscriptions, no data leaving your machine.
+VeriQAi publishes free, open-source, privacy-first AI tools for educators. Every tool runs entirely in your browser — no accounts, no subscriptions, no student data sent to our servers. Two tools are available today:
 
-## 🚀 Our Tools
-
-| Tool | What it solves | Live App |
+| Tool | What it does | Live App |
 |---|---|---|
-| **GradeBridge** | Eliminates the trade-off between student convenience and Gradescope AI-grading efficiency | [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) · [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/) |
-| **MATLAB Grader Problem Generator** | Turns 1–2 hours of MATLAB Grader problem authoring into minutes | [MATLAB Grader Problem Generator](https://veriqai.github.io/MatlabGraderProblemGenerator/) |
+| **GradeBridge** | Structured engineering assignments with AI autograding via Gradescope — using your own autograder, not Gradescope's built-in AI | [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) · [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/) |
+| **MATLAB Grader Problem Generator** | Generates complete MATLAB Grader problems from a single learning objective in minutes | [Open App](https://veriqai.github.io/MatlabGraderProblemGenerator/) |
 
 ---
 
-## ✅ GradeBridge — Solve the Gradescope Efficiency Gap
+## GradeBridge
 
-**GradeBridge eliminates the costly trade-off between student convenience and grading efficiency in Gradescope.** ([constraints that create this problem](https://github.com/VeriQAi/.github/blob/main/WORKFLOW_MOTIVATION.md))
+GradeBridge is a system for creating structured engineering course assignments with AI autograding via Gradescope. It replaces ad-hoc PDF submissions with a structured workflow: students submit an encrypted ZIP archive, and a Docker-based autograder — running in your own Gradescope account and calling the Anthropic Claude API — scores answers automatically against your rubric.
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/VeriQAi/.github/main/gradebridge-workflow.png" alt="GradeBridge Suite Workflow" width="500">
-</div>
+GradeBridge does **not** use Gradescope's built-in AI features. It does **not** use Gradescope PDF templates or template regions. No student data passes through any VeriQAi server at any point.
 
-### 🎯 The Gradescope Problem
+### How the pipeline works
 
-**Gradescope's AI-assisted grading saves 40-60% of grading time** — but only works with templated PDFs. This forces educators into a costly trade-off:
+```mermaid
+flowchart LR
+    A["Instructor's existing materials\nWord · PDF · Markdown"] -->|"Claude Code reads source\n(two-phase: objectives → rubrics)"| B["Structured assignment .md"]
+    B -->|"Import into Assignment Maker"| C["Assignment Maker\nbrowser app"]
+    C --> D["Student assignment file\n(distributed via Canvas)"]
+    C --> E["Confidential grader doc\n(HTML, for TAs)"]
+    D -->|"Student loads in browser"| F["Student Submission App\nno install · no account"]
+    F -->|"Fill answers · Download"| G["Encrypted ZIP\nAES-256-GCM"]
+    G -->|"Submit to Gradescope"| H["GradeBridge Docker autograder\nPython · calls Claude API"]
+    H --> I["AI-graded questions scored\nTA-review questions flagged"]
+```
 
-- ✅ **Use templates** → Get AI efficiency BUT students struggle with rigid formatting (8+ hours instructor setup)
-- ✅ **Skip templates** → Easy submissions BUT lose all AI time savings
+### Step by step
 
-**The hidden cost:** Thousands of hours lost every semester to this forced choice.
+1. **Instructor:** Run Claude Code against your existing lab manual or project description (Word, PDF, or Markdown — no reformatting needed). Claude Code generates a structured assignment `.md` file in two phases: first you confirm the learning objectives, then rubrics are written.
+2. **Instructor:** Import the `.md` into the [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/) browser app. Review and adjust questions, point values, and rubrics. Export — this produces the student assignment file (distribute via Canvas), a PDF, and a confidential grader document (HTML, for TAs).
+3. **Student:** Open the [Student Submission App](https://veriqai.github.io/GradeBridge-Student-Submission/) in a browser (no account, no install). Load the assignment file, fill in answers, click **Download for Gradescope**. Submit the single ZIP archive to Gradescope.
+4. **Gradescope:** GradeBridge's Docker autograder runs. It calls the Anthropic Claude API directly, scores AI-graded questions automatically, and flags TA-review questions for human review.
 
-### The Solution: Get Both Benefits
+### Submission types
 
-**GradeBridge eliminates the trade-off** — delivering flexible student submissions that generate perfect Gradescope templates automatically.
+| Type | What the student does | How it is graded |
+|---|---|---|
+| Text | Types an answer | TA reviews |
+| Image | Uploads a photo or screenshot | TA checks against grader checklist |
+| AI Graded: Binary | Yes/no answer with brief justification | Autograder scores automatically |
+| AI Graded: Short / Medium / Long | ~50 / ~100 / ~150-word response | Autograder scores against required-elements rubric |
 
-#### [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/)
-**For Educators** • Create Gradescope-optimized assignments in 15 minutes (not 8 hours)
-- Professional LaTeX rendering built-in
-- **Exports JSON that students load in Student Submission app**
-- **Auto-generates perfect Gradescope PDF templates**
-- Zero manual template creation required
+### What you need
 
-#### [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/)
-**For Students** • Load assignments from Assignment Maker and generate Gradescope-ready PDFs
-- **Imports JSON files created by instructors using Assignment Maker**
-- Guided interface prevents formatting errors
-- **AI usage tracking built-in for academic integrity**
-- **PDFs match instructor Gradescope templates perfectly**
+- A Gradescope account with a course
+- An Anthropic API key (used by the Docker autograder on Gradescope)
+- Claude Code (for assignment generation from your existing materials)
 
-### 🔥 The Impact
+### Repositories
 
-**Time Savings:**
-- **Assignment creation:** 8 hours → 15 minutes (3,100% improvement)
-- **Grading efficiency:** Full 40-60% Gradescope AI savings preserved
-- **Student submission success:** Near 100% (vs. frequent format failures)
-
-**Quality Improvements:**
-- Zero time spent on formatting troubleshooting
-- Consistent, professional submissions every time
-- Academic integrity through AI usage documentation
-- Maximum Gradescope AI efficiency realized
-
-### Quick Start
-
-**Educators:**
-1. Visit [Assignment Maker](https://veriqai.github.io/GradeBridge-Assignment-Maker/)
-2. Create assignment with LaTeX support (15 minutes vs 8 hours)
-3. Export JSON for students + PDF template for Gradescope
-4. Upload PDF to Gradescope — all regions auto-configured
-
-**Students:**
-1. Get assignment JSON from instructor
-2. Visit [Student Submission](https://veriqai.github.io/GradeBridge-Student-Submission/)
-3. Load assignment → Complete work → Download Gradescope-ready PDF
-4. Submit with confidence — format guaranteed to work
+- [VeriQAi/VeriQAI-GradeBridge](https://github.com/VeriQAi/VeriQAI-GradeBridge) — system docs and CCAssignmentMaker tools
+- [VeriQAi/GradeBridge-Assignment-Maker](https://github.com/VeriQAi/GradeBridge-Assignment-Maker) — Assignment Maker app
+- [VeriQAi/GradeBridge-Student-Submission](https://github.com/VeriQAi/GradeBridge-Student-Submission) — Student Submission app
 
 ---
 
-## 🛠️ MATLAB Grader Problem Generator
+## MATLAB Grader Problem Generator
 
 ### [Open App →](https://veriqai.github.io/MatlabGraderProblemGenerator/)
 
-**For MATLAB Educators** • Generate complete, assessment-ready MATLAB Grader problems in minutes — not hours.
+Creating a single MATLAB Grader problem from scratch means writing four separate artifacts — problem description, reference solution, learner template, and test cases — each with MATLAB Grader's exacting syntax requirements. The test cases alone (guard conditions, diagnostics, R2025b API) can take an experienced instructor an hour or more per problem.
 
-### 🎯 The Problem
+Enter a learning objective. The app proposes calibrated problems across Easy / Medium / Hard difficulty for Script or Function problem types. Select the ones you want — all four artifacts are generated in sequence with live review at each step. Download as a named ZIP ready to paste directly into MATLAB Grader.
 
-Creating a single MATLAB Grader problem from scratch means writing four distinct artifacts — each with MATLAB Grader's exacting syntax requirements:
+**Key facts:**
 
-| Artifact | What it involves |
-|---|---|
-| Problem description | Clear, numbered student-facing instructions |
-| Reference solution | Complete, commented `.m` solution |
-| Learner template | Scaffolded `.m` file with stubs for students |
-| Test cases | Assessment code using MATLAB Grader's `assessVariableEqual`, `assessPattern` API |
-
-The test cases alone — with their guard conditions, diagnostics, and R2025b syntax rules — can take an experienced instructor an hour or more per problem. Multiply that across a full problem set and the authoring burden is significant.
-
-### The Solution
-
-Enter a learning objective. Claude proposes calibrated problem options across difficulty levels (Easy / Medium / Hard) for Script or Function problem types. Select the ones you want — all 4 artifacts are generated automatically, one by one, with live review at each step. Download as a named ZIP ready to paste directly into MATLAB Grader.
-
-### 🔥 The Impact
-
-- **Problem authoring:** 1–2 hours per problem → minutes
-- **Test case quality:** R2025b-compliant syntax, guard conditions, and verbose diagnostics out of the box
-- **Cost:** Generating and fully developing 4 problems costs approximately **$0.05–$0.10** with Claude Sonnet 4.6
-
-### Key Facts
-
-- Bring your own Anthropic API key (get one at [console.anthropic.com](https://console.anthropic.com))
-- Model selector: Claude Haiku (fast) · Sonnet (recommended) · Opus (most capable)
-- Supports both Script and Function problem types
+- Requires your own Anthropic API key (get one at [console.anthropic.com](https://console.anthropic.com))
+- Generating and fully developing 4 problems costs approximately **$0.05–$0.10** with Claude Sonnet
+- R2025b-compliant MATLAB Grader syntax out of the box
 - No signup · MIT License · Runs entirely in your browser
 
----
-
-## 🔧 Technical Excellence (All Tools)
-
-**Privacy & Accessibility:**
-- 100% client-side processing — your data never leaves your browser
-- No accounts or subscriptions required
-- Works on any device with a modern browser
-- MIT License — free for all educational use
-
-**Built for real courses:**
-- GradeBridge tested with courses of 500+ students
-- MATLAB Grader Problem Generator generates R2025b-compliant assessment code
+**Repository:** [VeriQAi/MatlabGraderProblemGenerator](https://github.com/VeriQAi/MatlabGraderProblemGenerator)
 
 ---
 
-## 📖 Learn More
+## About VeriQAi
 
-- 📖 **[Why Gradescope forces the trade-off & how GradeBridge solves it](https://github.com/VeriQAi/.github/blob/main/WORKFLOW_MOTIVATION.md)**
-- 🐛 [Report issues or request features](https://github.com/orgs/VeriQAi/repositories)
-- ⭐ Star our repos if they save you time
+We are educators and engineers who build tools to remove friction from AI-assisted teaching and assessment. Our tools work alongside the platforms you already use — Gradescope, MATLAB Grader, Canvas — rather than replacing them.
 
----
+All tools are MIT-licensed, free forever, and designed so that your data and your students' data never leave your machine.
 
-## About VeriQAI
-
-We're educators and technologists who got tired of the artificial trade-offs imposed by educational technology platforms. **GradeBridge** is our flagship solution — proving that you don't have to choose between student experience and instructor efficiency. The **MATLAB Grader Problem Generator** is our latest utility — eliminating the authoring burden that keeps high-quality MATLAB assessments out of reach.
-
-*More educational workflow solutions in development • Follow us to stay updated*
-
----
-
-**Built by educators, for educators.**
+[Report an issue or request a feature](https://github.com/orgs/VeriQAi/repositories)
